@@ -21,7 +21,7 @@ dataset_dic = [
 # Initialize the app - incorporate a Dash Mantine theme
 external_stylesheets = [dmc.theme.DEFAULT_COLORS]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 # App layout
 app.layout = dmc.Container(
     [
