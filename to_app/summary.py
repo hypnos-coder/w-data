@@ -7,7 +7,7 @@ import dash_mantine_components as dmc
 # Incorporate data
 df1 = pd.read_csv('governance_to_app.csv')
 df2 = pd.read_csv('world_death_to_app.csv')
-df3 = pd.read_csv('world_Education_to_app.csv')
+df3 = pd.read_csv('world_education_to_app.csv')
 # df4 = pd.read_csv('world_gdp/to_app.csv')
 
 dataset_dic = [
