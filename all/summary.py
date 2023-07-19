@@ -201,7 +201,8 @@ def update_graph(dataset_selected, country_selected, column_selected):
 
     value = dff.columns.to_list()[-1]
     # print(value)
-    map_figure = px.choropleth(
+    if dataset_selected == 'dataset2':
+        map_figure = px.choropleth(
         data_frame=df,
         locations='Country_Name',
         locationmode='country names',
@@ -213,6 +214,20 @@ def update_graph(dataset_selected, country_selected, column_selected):
         labels={'Value': value},
        
     )
+    else:
+       map_figure = px.choropleth(
+        data_frame=df,
+        locations='Country_Name',
+        locationmode='country names',
+        color=value,
+        animation_frame='Year',
+        color_continuous_scale='blues',
+        range_color=(df[value].min(), df[value].max()),
+        title='World Map',
+        labels={'Value': value},
+       
+    )
+
 
     map_figure.update_geos(showframe=False, showcoastlines=False, projection_type='orthographic', showocean=True, oceancolor="LightBlue")
     map_figure.update_layout(
