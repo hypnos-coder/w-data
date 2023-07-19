@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 import dash_mantine_components as dmc
 
-
+# fnerh3e
 # Incorporate data
 dataframe = pd.read_csv('main.csv')
 dataframe.insert(0,'Ranking', dataframe.index+1)
