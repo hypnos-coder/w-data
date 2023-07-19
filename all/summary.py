@@ -10,7 +10,7 @@ dataframe = pd.read_csv('main.csv')
 dataframe.insert(0,'Ranking', dataframe.index+1)
 
 df1 = pd.read_csv('governance_final_version.csv')
-df2 = pd.read_csv('world_Death_final_version.csv')
+df2 = pd.read_csv('world_death_final_version.csv')
 df3 = pd.read_csv('edu.csv')
 df4 = pd.read_csv('gdp_final_version.csv')
 
