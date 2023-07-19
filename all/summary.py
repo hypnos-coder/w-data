@@ -86,7 +86,7 @@ app.layout = dmc.Container(
             align="center"
         ),
         dmc.Space(h=30),
-        dmc.Title('Ranking Table', color="blue", size="h4", align="center"),
+       
         dmc.Center(
             [
                 dmc.Grid(
@@ -109,6 +109,8 @@ app.layout = dmc.Container(
             ]
         ),
         dmc.Space(h=30),
+        dmc.Title('Ranking Table', color="blue", size="h4", align="center"),
+        dmc.Space(h=20),
         dmc.Center(
             dmc.Table(
                 dash_table.DataTable(
