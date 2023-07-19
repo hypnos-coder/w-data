@@ -45,7 +45,7 @@ header_style = {
 # App layout
 app.layout = dmc.Container(
     [
-        dmc.Title('Insight App', color="blue", size="h3", align="center"),
+        dmc.Title('Insight App', color="blue", size="h1", align="center"),
         dmc.Grid(
             [
                 dmc.Col(
