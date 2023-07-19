@@ -221,7 +221,7 @@ def update_graph(dataset_selected, country_selected, column_selected):
         locationmode='country names',
         color=value,
         animation_frame='Year',
-        color_continuous_scale='blues',
+        color_continuous_scale='yellowgreen',
         range_color=(df[value].min(), df[value].max()),
         title='World Map',
         labels={'Value': value},
