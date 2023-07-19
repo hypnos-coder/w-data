@@ -1,5 +1,5 @@
 # Import packages
-from dash import Dash, html, dcc, callback, Output, Input, dash_table
+from dash import Dash, dcc, Output, Input, dash_table
 import pandas as pd
 import plotly.express as px
 import dash_mantine_components as dmc
@@ -25,6 +25,7 @@ dataset_dic = [
 # Initialize the app - incorporate a Dash Mantine theme
 external_stylesheets = [dmc.theme.DEFAULT_COLORS]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 table_style = {
     'border':'thin lightgrey solid',
